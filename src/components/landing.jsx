@@ -14,14 +14,19 @@ import Tracks from "./tracks/tracks";
 import Media from "./commpart/media";
 import Certificate from "./commpart/Certificate";
 import Prize from "./prize";
+import Roadmap from "./Roadmap/Roadmap"
+import useRoadmapScrollAnimation from "./Roadmap/RoadmapScrollAnimation"
 
 export default function landing() {
+  useRoadmapScrollAnimation()
   return (
     <div style={{ overflow: "clip" }}>
       <Hero />
       <About />
       {/* <Prize /> */}
       <Previous />
+
+      <Roadmap/>
       <Timeline />
       {/* <Tracks /> */}
       <CommPart />
